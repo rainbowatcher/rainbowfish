@@ -54,7 +54,20 @@ function unproxy
         end
     end
 
+    function set_rustup_mirror --no-scope-shadowing
+        if test (set -x | grep -Ec 'RUSTUP_UPDATE_ROOT') -eq 0
+            begin
+                set -xU RUSTUP_UPDATE_ROOT https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
+                set -xU RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup
+            end
+            judge "set rustup mirror to 'https://mirrors.tuna.tsinghua.edu.cn/rustup'"
+        else
+            $info "rustup mirror has already set"
+        end
+    end
+
     unset_cli_proxy
     unset_git_proxy
     unset_cargo_proxy
+    set_rustup_mirror
 end

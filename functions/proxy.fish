@@ -57,7 +57,20 @@ function proxy
         end
     end
 
+    function unset_rustup_mirror --no-scope-shadowing
+        if test (set -x | grep -Ec 'RUSTUP_UPDATE_ROOT') -gt 0
+            begin
+                set -e RUSTUP_UPDATE_ROOT
+                set -e RUSTUP_DIST_SERVER
+            end
+            judge "reset rustup mirror"
+        else
+            $info "rustup mirror has already reset"
+        end
+    end
+
     set_cli_proxy
     set_git_proxy
     set_cargo_proxy
+    unset_rustup_mirror
 end
