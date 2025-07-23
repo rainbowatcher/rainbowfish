@@ -1,5 +1,5 @@
 ## Install
 
 ```sh
-fisher install rainbowatcher/fish-functions
+fisher install rainbowatcher/rainbowfish
 ```
