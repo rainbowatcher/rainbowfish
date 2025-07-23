@@ -2,7 +2,7 @@
 abbr --add .. 'cd ..'
 abbr --add ... 'cd ../..'
 abbr --add .... 'cd ../../..'
-abbr --add grep 'grep --color'
+alias grep 'grep --color'
 abbr --add pid "pgrep -lf"
 
 # ls
