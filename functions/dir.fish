@@ -1,3 +1,3 @@
-function dir --argument-names dir
-    mkdir -p "$dir" && cd "$_"
+function dir --argument-names path
+    mkdir -p "$path" && cd "$_"
 end
