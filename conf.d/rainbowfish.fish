@@ -12,10 +12,10 @@ else
     alias ls='ls --color'
 end
 
-abbr --add lt 'ls -lhF --time-style long-iso -s time'
-abbr --add ll 'ls -lhF --time-style long-iso'
-abbr --add lg 'ls -lbGahF --time-style long-iso'
-abbr --add lx 'ls -lbhHigUmuSa@ --time-style=long-iso --git --color-scale'
+alias lt='ls -lhF --time-style long-iso -s time'
+alias ll='ls -lhF --time-style long-iso'
+alias lg='ls -lbGahF --time-style long-iso'
+alias lx='ls -lbhHigUmuSa@ --time-style=long-iso --git --color-scale'
 abbr --add lsa 'ls -a'
 
 # vscode
