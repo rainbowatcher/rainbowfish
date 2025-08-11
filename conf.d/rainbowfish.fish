@@ -125,3 +125,8 @@ if type -q nr
     abbr --add l "nr lint"
     abbr --add t "nr test"
 end
+
+# MARK: Functions
+function port --argument-names pt
+    lsof -sTCP:LISTEN -iTCP:$pt
+end

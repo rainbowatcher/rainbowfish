@@ -10,5 +10,6 @@ trash -r "./$COMPLETIONS_DIR"/*
 # npm completion > "$COMPLETIONS_DIR/npm.fish"
 # pip completion --fish > "$COMPLETIONS_DIR/__fish_complete_pip.fish"
 pnpm completion fish > "$COMPLETIONS_DIR/pnpm.fish"
+# mise completion fish > "$COMPLETIONS_DIR/mise.fish"
 # delta --generate-completion fish > "$COMPLETIONS_DIR/delta.fish"
 # rustup completions fish > "$COMPLETIONS_DIR/rustup.fish"
