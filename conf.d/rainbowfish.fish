@@ -21,6 +21,7 @@ abbr --add lsa 'ls -a'
 # vscode
 if type -q code
     abbr --add zshrc 'code ~/.zshrc'
+    abbr --add zshenv 'code ~/.zshenv'
 end
 
 # trash
