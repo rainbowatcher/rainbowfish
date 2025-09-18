@@ -85,8 +85,7 @@ if type -q git
 end
 
 if type -q hyperfine
-    abbr --add hf hyperfine
-    abbr --add hf5 "hf -r5 -w5"
+    abbr --add hf5 "hyperfine -r5 -w5"
 end
 
 if type -q just
